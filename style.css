@@ -1,0 +1,728 @@
+/* 
+Theme name: VEAPB
+Theme URI: htttps://VEAPB.com.br
+Author: Sabrina Polazzo
+Author URI: Sabrina Chaves Polazzo
+Description: Tema inicial teste
+Version: 1.0
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #103552;
+    --secundary-color: #0e0b3a;
+    --dark-color: black;
+    --ligth-color: white;
+}
+
+body {
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+.center {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2%;
+}
+
+.center-menu {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.clear {
+    clear: both;
+}
+
+.w50 {
+    float: left;
+    width: 50%;
+    padding: 15px 15px;
+}
+
+.w33 {
+    width: 33.33%;
+    padding: 15px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+div.top {
+    position: relative;
+    height: 9rem;
+    background: linear-gradient(114deg, #a1a1a1, #e7e7e7);
+    box-shadow: 0 0 15px rgb(96, 96, 96);
+}
+
+div.top-patrocinadores,
+.flex {
+    display: flex;
+    height: 100%;
+}
+
+
+div.top-patrocinadores {
+    width: 100%;
+    position: absolute;
+}
+
+
+div.top-left,
+div.top-rigth,
+.flex-rigth,
+.flex-left {
+    flex: 1;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+div.top-left,
+div.top-rigth {
+    padding: 0 60px;
+}
+
+.flex-rigth,
+.flex-left {
+    padding: 0 67px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.logo img {
+    width: 84%;
+}
+
+.logo-patrocinadores.w33 img {
+    max-width: 100%;
+    width: 6rem;
+    margin-left: -10px;
+}
+
+ul.menu-desktop.flex-left {
+    text-align: end;
+    margin-left: -40px;
+}
+
+.menu {
+    background: #ffffff;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    float: right;
+}
+
+.menu-mobile i {
+    font-size: 33px;
+    color: var(--primary-color);
+    cursor: pointer;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+}
+
+
+.menu-mobile ul {
+    display: none;
+    left: 0;
+    top: 130px;
+    width: 100%;
+    position: absolute;
+    list-style-type: none;
+}
+
+.menu-mobile li {
+    padding: 8px 0;
+    text-align: center;
+    width: 100%;
+    background: var(--secundary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.menu-mobile a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu-desktop {
+    float: left;
+}
+
+.menu-desktop.rigth {
+    margin-left: 13.9rem;
+}
+
+.menu-desktop li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu-desktop a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.menu-desktop a:hover {
+    opacity: 1;
+}
+
+section.bannerhome, .imagem-competicao {
+    width: 100%;
+}
+
+section.bannerhome img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+
+.single-img.slick-slide.slick-current.slick-active {
+    text-align: center;
+    background-color: #0e0b3a;
+    padding: 5px 0;
+}
+
+
+section.imagem-competicao {
+    padding-bottom: 120px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+    gap: 20px;
+    /* Espaçamento entre as colunas */
+    text-align: center;
+    background-color: #dcdcdc;
+    color: #cd7d28;
+    margin-top: 20px;
+    padding: 20px 0;
+    font-weight: 600;
+    box-shadow: 10px 10px 20px #bbb1a7;
+    text-transform: uppercase;
+}
+
+.partida-atual.grid p.element {
+    margin-top: 37px;
+    font-size: 25px;
+}
+
+.partida-slider, .competicao-slider {
+    overflow: hidden;
+    display: block;
+}
+
+.partida-single-slider, .single-img{ 
+    width: 100%;
+    display: inline-block;
+}
+
+section#competicao {
+    padding: 100px 0;
+}
+
+h2.title-partida {
+    text-align: center;
+    color: #cd7d28;
+    text-transform: uppercase;
+}
+
+section.apoio-slider {
+    padding: 60px 0;
+}
+
+section.about-time {
+    padding: 40px 0;
+}
+
+.img-time img {
+    max-width: 100%;
+}
+
+.time-descricao-2 {
+    padding: 0px 20px;
+}
+
+.time-descricao-2 h2 {
+    color: #202020;
+    line-height: 45px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.time-descricao-2 p {
+    color: #383838;
+    padding-right: 30px;
+    font-size: 15px;
+
+}
+
+.apoio-slider .center img {
+    padding: 0 20px;
+}
+
+/****SLICK SLIDER****/
+
+.slick-dotted ul {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.slick-dotted li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotted button:focus {
+    outline: 0;
+}
+
+.slick-dotted li button {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background: #d8d8d8;
+    opacity: 1;
+    cursor: pointer;
+}
+
+li.slick-active button {
+    background: #0c3f8a;
+    color: #0c3f8a;
+}
+
+.slick-slide:focus {
+    outline: none;
+}
+
+/**END SLICK**/
+
+section.noticias {
+    padding: 60px 0;
+    background-color: #0e0b3a;
+    color: white;
+}
+
+.flex.box-noticias {
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+section.noticias .center>h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+.box-single-noticias {
+    text-align: center;
+    width: 33.33%;
+    padding: 0 1rem;
+    margin-bottom: 30px;
+}
+
+.box-single-noticias p {
+    margin: 1rem 2rem;
+    text-align: justify;
+}
+
+.box-single-noticias,
+.box-single-noticias img {
+    max-width: 100%
+}
+
+.box-single-noticias img {
+    border: 3px solid var(--primary-color);
+}
+
+.box-single-noticias h3 {
+    font-size: 17px;
+    margin: 1rem 0;
+    color: white;
+}
+
+section.depoimentos {
+    padding: 100px 0;
+    background-color: #0e0b3a;
+}
+
+section.depoimentos h2 {
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.depoimentos-box {
+    overflow: hidden;
+    margin: 10px auto;
+    color: white;
+    max-width: 800px;
+    width: 100%;
+    display: block;
+}
+
+.depoimentos-single p {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: var(--ligth-color);
+}
+
+.depoimentos-single {
+    width: 100%;
+    display: inline-block;
+}
+
+.depoimentos-single img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+section.metodologia {
+    position: absolute;
+    z-index: 10;
+    top: -40px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 40px 0;
+    background: var(--ligth-color);
+    border-top: 3px solid #cd7d28;
+    box-shadow: 10px 20px 60px 0 rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+section.metodologia h2 {
+    color: 232931;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+section.metodologia p {
+    color: #b4b4b4;
+    margin: 15px 0;
+    font-size: 19px;
+}
+
+section.metodologia a {
+    text-decoration: none;
+    color: var(--ligth-color);
+    padding: 8px 15px;
+    background-color: #0e0b3a;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+footer {
+    position: relative;
+    padding-top: 300px;
+    padding-bottom: 100px;
+    background: linear-gradient(114deg, #a1a1a1, #e7e7e7);
+}
+
+
+.line {
+    border-bottom: 2px solid white;
+    width: 100%;
+    margin-top: 5rem;
+    position: absolute;
+}
+
+.logo-footer{
+    z-index: 3;
+}
+
+.center-footer{
+    max-width:1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.grid-footer p {
+    font-size: 12px;
+}
+
+.grid-footer p{
+    text-align: start;
+}
+
+.grid-footer p, .redes-socias {
+    margin-top: 7rem;
+}
+
+.redes-socias {
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr;
+}
+
+.redes-socias i {
+    margin: 10px;
+}
+
+/* pagina sobre */
+
+section.sobre-equipe {
+    padding: 40px 0;
+}
+
+s section.sobre-equipe img {
+    max-width: 100%;
+}
+
+.equipe-sobre-texto {
+    padding: 0 30px;
+}
+
+.equipe-sobre-texto h2 {
+    font-size: 45px;
+    color: #202020;
+}
+
+.equipe-sobre-texto p {
+    text-align: justify;
+    font-size: 16px;
+    color: #202020;
+    line-height: 30px;
+}
+
+section.galeria {
+    padding: 100px 0;
+    background-color: #0e0b3a;
+}
+
+.galeria>.center {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    max-width: 100%;
+}
+
+.galeria .img-sobre {
+    padding: 0 30px;
+    width: 25%;
+}
+
+/* pagina contato */
+
+section.contato {
+    padding: 30px 0;
+}
+
+.contato-info h2 {
+    color: #202020;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.contato-info p {
+    color: #202020;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.mapa-container {
+    position: relative;
+    width: 100%;
+    padding-top: 70%;
+}
+
+div#mapa {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+
+.contact-form {
+    padding: 0 30px;
+    margin-top: 80px;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form select {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 20px;
+    border: 0;
+    padding-left: 8px;
+    font-size: 16px;
+    border: solid 1px #e3e3e3;
+    box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 8px;
+    font-size: 16px;
+    border: solid 1px #e3e3e3;
+    box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+    resize: none;
+}
+
+.contact-form input[type=submit] {
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 20px 30px 0 rgba(203, 203, 203, 0.2);
+    background-color: #212a97;
+    color: var(--ligth-color);
+    font-size: 15px;
+    border: 0;
+    cursor: pointer;
+}
+
+section.error-404 {
+    padding: 100px 0;
+}
+
+@media only screen and (max-width:563px){
+    .grid-footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .redes-socias{
+    justify-content: center;
+    }
+
+    .grid-footer p{
+        text-align: center;
+    }
+    .redes-socias {
+        margin-top: 2rem;
+    }
+    .redes-socias {
+    margin-top: 2rem;
+}
+.partida-atual.grid {
+    padding: 2% 10%;
+    font-size: 10px;
+}
+img.competicao-img {
+    width: 95%;
+    border: 1px solid white;
+}
+}
+
+@media only screen and (max-width: 985px) {
+    .box-single-noticias {
+        width: 100%;
+    }
+
+    .w50 {
+        width: 100%;
+    }
+
+    .img-time {
+        margin-top: 30px;
+    }
+
+    .menu-desktop, .logo-patrocinadores{
+        display: none;
+    }
+    div.top{height: 8rem;}
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .col-footer {
+        margin-bottom: 30px;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    section.sobre-equipe img {
+        margin-top: 20px;
+    }
+
+    .redes-socias{position: relative;}
+
+    section.galeria .img-sobre {
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .logo img {
+        width: 66%;
+    }
+}
+
+@media only screen and (min-width: 996px) {
+    .time-descricao-2 {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 1178px) {
+    .menu-desktop a {
+        font-size: 15px; 
+    }
+}
